@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css"/>
+    <!-- script -->
+    <script defer src="js/script.js"></script>
+
+    <title>App Alexis</title>
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <a href="index.html"> Home</a>
+      <a href="watchlist.html"> Mi Lista </a>
+      <a href="trailer.html"> Trailers </a>
+    </nav>
+
+      <!-- <Estado online o offline> -->
+      <p id="status" class="offl"></p>
+      <!-- </ Estado online o offline> -->
+
+   
+    <main>
+      <div class="search-bar mt-3">
+        <input type="text" placeholder="Ingrese título de película.."/><button>Buscar</button>
+      </div>
+
+      <div class="not-found"></div>
+      <div class="movie-container" id="movie-container"></div>
+    </main>
+
+    <script src="js/appsw.js"></script>
+    <script src="js/offonline.js"></script>
+
+  </body>
+</html>

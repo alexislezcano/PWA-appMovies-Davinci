@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    background:#1e2638;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+  }
+
+  h1{ 
+    font-size: 1rem;
+  }
+
+  .navbar {
+    text-align: center;
+    background: rgb(72,72,72);
+    background: linear-gradient(184deg, rgba(72,72,72,1) 0%, rgba(21,21,21,1) 100%);
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .navbar > a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  div>a {
+    font-size: medium;
+    background-color: rgba(0, 0, 0, 0.708);
+    color: rgb(255, 255, 255);
+  }
+  
+
+/* GALLERY IMAGENES */
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+
+
+@media screen and (min-width:576px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+ 
+
+    /* GALLERY */
+    header {
+        margin: auto;
+    }
+    .grid-container{
+        margin: auto;
+        width: 100%;
+    }
+    
+
+    
+    /* PRODUCTOS */
+   .efecto-img {
+    transition: 0.5s;
+    object-fit: cover;
+   }
+   .efecto-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+   }
+   .mb-3 {
+    margin: auto;
+    margin-bottom: 1rem!important;
+   }
+   
+   
+
+}
+
+
+

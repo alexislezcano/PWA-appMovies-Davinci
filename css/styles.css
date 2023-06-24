@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background:#1e2638;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  height: 75vh;
+  /* background-color: #121212; */
+}
+
+.navbar {
+  text-align: center;
+  background: rgb(72,72,72);
+  background: linear-gradient(184deg, rgba(72,72,72,1) 0%, rgba(21,21,21,1) 100%);
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.title {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+.search-bar {
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin-top: 3rem;
+  width: 400px;
+  padding: 0.5em;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  background: linear-gradient(173deg, rgb(46, 44, 49) 0%, rgb(0, 0, 0) 100%);
+  color: #fcfcfc;
+  border-radius: 15px 0 0 15px;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 3rem;
+  padding: 0.5em 3em;
+  font-size: 1rem;
+  background: rgb(105,86,129);
+  background: linear-gradient(173deg, rgba(105,86,129,1) 0%, rgba(37,37,37,1) 100%);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  background-repeat: no-repeat;
+}
+
+.movie-container,
+.selected-watchlist {
+  text-align: center;
+  color: white;
+  background:#1e2638;
+  display: grid;
+  place-content: center;
+  margin-top: 35px;
+}
+
+.movie {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.movie-details {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2{
+  margin: 4rem;
+}
+
+h2 > span {
+  font-size: 0.85rem;
+}
+
+.movie-details > p:nth-child(2) {
+  color: white;
+  font-size: 0.85rem;
+}
+
+span {
+  color: aquamarine;
+}
+
+.plot {
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.runtime,
+.genre {
+  margin-right: 20px;
+}
+
+.icon-watchlist {
+  width: 100%;
+  color: rgb(219, 14, 14);
+  cursor: pointer;
+}
+
+.colori {
+  color: cyan;
+}
+
+
+.empty-watchlist {
+  display: grid;
+  place-items: center;
+}
+
+.not-found {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
